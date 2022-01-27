@@ -6,7 +6,6 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Application {
-
     //Pulling text from file one and turning into arrayList
     public ArrayList<String> getInfo1() throws IOException{
         String data = "";
@@ -29,13 +28,12 @@ public class Application {
         //list = getInfo1();
         ArrayList<String> answer = new ArrayList<>();
 
-        System.out.println(list.stream().filter(a-> a.contains("on")).collect(Collectors.toList()));
+        System.out.println(list.stream().filter(a -> a.contains("on")).collect(Collectors.toList()));
 //        for(var i : list) {
 //            if(i.contains("one")) {
 //              answer.add(i);
 //            }
 //        }
-
 
         return answer;
     }
