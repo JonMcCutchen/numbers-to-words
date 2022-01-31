@@ -9,7 +9,7 @@ public class Main {
         app.columnList(app.sortList(app.getInfo1()));
         System.out.println(app.getInfo2());
         app.columnList(app.sortList(app.getInfo2()));
-//        app.sortList(app.getInfo1());
-//      System.out.println(app.sortList(app.getInfo1()));
+
+
     }
 }

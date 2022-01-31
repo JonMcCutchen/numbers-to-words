@@ -1,20 +1,22 @@
 import java.io.File;
 import java.io.IOException;
+
 import java.io.PrintWriter;
+
 import java.util.*;
-import java.util.stream.Collectors;
+
 
 public class Application {
 
 
-
     //Pulling text from file one and turning into arrayList
-    public ArrayList<String> getInfo1() throws IOException{
+    public ArrayList<String> getInfo1() throws IOException {
         String data = "";
         File file = new File("src/main/resources/string-numbers-input1.txt");
         Scanner scan = new Scanner(file);
 
         ArrayList<String> answer = new ArrayList<>();
+
 
         while(scan.hasNext()){
         data = scan.nextLine();
@@ -25,10 +27,19 @@ public class Application {
     }
     public ArrayList<String> getInfo2() throws IOException{
         String data = "";
-        File file = new File("C:\\numbers-to-words\\src\\main\\resources\\string-numbers-input2.txt");
+        File file = new File("src/main/resources/string-numbers-input2.txt");
         Scanner scan = new Scanner(file);
 
         ArrayList<String> answer = new ArrayList<>();
+
+        //looping through text file
+        //while there is text on the lines
+        //adding to arraylist every loop
+        while (scan.hasNext()) {
+            data = scan.nextLine();
+            answer.add(data);
+        }
+
 
         while(scan.hasNext()){
             data = scan.nextLine();
@@ -38,9 +49,19 @@ public class Application {
         return answer;
     }
 
+
+
+
+
+
+
+
+    //Turning arrayList into columns
     public static void columnList(ArrayList<String> colList) {
         int index = 0;
+        //iterating through arraylist
         for (String w : colList) {
+            //formatting into columns
             System.out.printf("%10s ", w);
             index++;
             if (index % 2 == 0) {
@@ -49,10 +70,12 @@ public class Application {
         }
     }
 
+
     //method to sort given list
     public ArrayList<String> sortList(ArrayList<String> list) throws IOException {
         ArrayList<String> sorted = new ArrayList<>();
 
+        //creating hashtable and calling it dictionary
         Hashtable<Integer, String> dictionary = new Hashtable<>();
         dictionary.put(1, "one");
         dictionary.put(2,"two");
@@ -85,6 +108,8 @@ public class Application {
         dictionary.put(29,"twenty nine");
         dictionary.put(30,"thirty");
 
+
+        //using dictionary to add to final arraylist
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).equals(dictionary.get(1))) {
                 sorted.add(list.get(i));
@@ -244,6 +269,4 @@ public class Application {
 
         return sorted;
     }
-
-    
 }
