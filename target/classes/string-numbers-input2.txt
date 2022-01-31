@@ -1,23 +1,30 @@
-one
 two
-three
 four
-five
 six
+eight
+ten
+twelve
+fourteen
+sixteen
+eighteen
+twenty
+twenty two
+twenty four
+twenty six
+twenty eight
+thirty
+one
+three
+five
 seven
 nine
-ten
 eleven
-twelve
 thirteen
-fourteen
 fifteen
-Sixteen
-Seventeen
-Eighteen
-Nineteen
-Twenty
-Twenty One
-Twenty Two
-Twenty Three Twenty Four
-Twenty Five
+seventeen
+nineteen
+twenty one
+twenty three
+twenty five
+twenty seven
+twenty nine
